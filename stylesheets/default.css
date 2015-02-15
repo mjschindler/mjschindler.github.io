@@ -26,7 +26,6 @@ body {
   background-size: cover;
   background-color: #7F8383;
 }
-
 /* End background image styling */
 
 /* Begin Header tag styling */
@@ -177,15 +176,6 @@ font-family: Helvetica Neu, sans-serif;
       padding: 2em;
       border-radius: 10px;
 }
-
-/* Begin media query for resize background - need to create new image file
-
-@media only screen and (max-width: 767px) {
-  body {
-    background-image: url(images/background-photo-mobile-devices.jpg);
-  }
-}
-*/
 
  /* Begin footer styling. */
 
