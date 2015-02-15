@@ -179,6 +179,7 @@ font-family: Helvetica Neu, sans-serif;
     .callToAction h1 {
           color: #F0E5ED;
           font-weight: bold;
+          line-height: 1em;
           text-transform: uppercase;
         }
 
