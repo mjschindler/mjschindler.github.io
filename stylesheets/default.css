@@ -1,44 +1,78 @@
-.body {
-  font-family: Times New Roman, serif;
+body {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
   font-size: 16px;
-  color: #555555;
+  color: #F0E5ED;
 }
 
+a,a:link,a:visited
+{
+ color:#ee6677;
+ }
+
+ a,a:hover
+{
+ color:#662244;
+}
+
+/* Begin background image styling http://sixrevisions.com/css/responsive-background-image/*/
+body {
+  background-image: url(https://unsplash.imgix.net/photo-1414005987108-a6d06de8769f?q=75&fm=jpg&s=b37798a9dbd0c8884af2261b518970e3);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #7F8383;
+}
+
+/* End background image styling */
+
+/* Begin Header tag styling */
 h1 {
 font-family: Helvetica Neu, sans-serif;
   font-size: 36px;
-  color: #180428;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ee6677;
 }
 
 h2 {
 font-family: Helvetica Neu, sans-serif;
   font-size: 32px;
-  color: #270b3d;
+  font-weight: normal;
+  color: #0B232F;
 }
 
 h3 {
 font-family: Helvetica Neu, sans-serif;
   font-size: 28px;
-  color: #270b3d;
+  font-weight: normal;
+  color: #0B232F;
 }
 
 h4 {
 font-family: Helvetica Neu, sans-serif;
   font-size: 24px;
-  color: #270b3d;
+  font-weight: normal;
+  color: #0B232F;
 }
 
 h5 {
 font-family: Helvetica Neu, sans-serif;
   font-size: 20px;
-  color: #270b3d;
+  font-weight: normal;
+  color: #0B232F;
 }
 
 h6 {
 font-family: Helvetica Neu, sans-serif;
   font-size: 12px;
-  color: #270b3d;
+  color: #0B232F;
 }
+
+/*End Header Tag Styling*/
 
 .margins {
     margin-left: auto;
@@ -57,3 +91,120 @@ font-family: Helvetica Neu, sans-serif;
     margin-left: auto;
     margin-right: auto;
 }
+/* Begin logo/header Styling */
+   #title h5 {
+      float: left;
+      margin: 0 0 3em 0;
+      padding: 1em;
+    }
+
+    #title a {
+      text-decoration: none;
+    }
+   /* End logo/header styling. */
+
+
+/* Begin Navigation Bar Styling
+   #nav {
+      font-family: Helvetica Neu, sans-serif;
+      font-size: 18px;
+      float: right;
+      margin: 0 0 3em 0;
+      padding: 0;
+      list-style: none;
+    }
+
+#nav li {
+      float: right;
+    }
+
+   #nav li a {
+      display: inline-block;
+      padding: 8px 15px;
+      text-decoration: none;
+    }
+
+   #nav li a:hover {
+      color: #c00;
+      background-color: #fff;
+    }
+
+     End navigation bar styling. */
+
+  /* Begin NEW navigation bar styling. */
+
+      nav ul {
+        font-family: Helvetica Neu, sans-serif;
+        font-size: 18px;
+        float: right;
+        margin: 0 0 3em 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display:inline-block;
+        padding: 1em;
+        float: right;
+      }
+
+      nav li a {
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+      color: #c00;
+    }
+
+/* End NEW navigation bar styling. */
+
+
+   /* Begin homepage call to action styling */
+
+    .callToAction {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    }
+
+    .callToAction h1 {
+          color: #F0E5ED;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+    .callToAction h4 {
+      color: #ee6677
+    }
+
+
+   /* End homepage call to action styling */
+
+/* Begin homepage call to action transparent styling */
+    .transparent {
+      background:rgba(0,0,0,0.75);
+      padding: 2em;
+      border-radius: 10px;
+}
+
+/* End homepage call to action transparent styling */
+
+    .transparentLight {
+      background:rgba(255,255,255,0.5);
+      padding: 2em;
+      border-radius: 10px;
+}
+
+/* Begin media query for resize background - need to create new image file
+
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(images/background-photo-mobile-devices.jpg);
+  }
+}
+*/
