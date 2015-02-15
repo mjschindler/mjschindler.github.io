@@ -17,7 +17,7 @@ a,a:link,a:visited
  color:#3E91A6;
 }
 
-/* Begin background image styling http://sixrevisions.com/css/responsive-background-image/*/
+/* Begin background image styling*/
 body {
   background-image: url(https://unsplash.imgix.net/photo-1414005987108-a6d06de8769f?q=75&fm=jpg&s=b37798a9dbd0c8884af2261b518970e3);
   background-position: center center;
@@ -210,8 +210,6 @@ font-family: Helvetica Neu, sans-serif;
 
 @media only screen and (max-width: 767px) {
   body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections
     background-image: url(images/background-photo-mobile-devices.jpg);
   }
 }
