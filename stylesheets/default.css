@@ -14,7 +14,7 @@ a,a:link,a:visited
 
  a,a:hover
 {
- color:#662244;
+ color:#3E91A6;
 }
 
 /* Begin background image styling http://sixrevisions.com/css/responsive-background-image/*/
@@ -110,6 +110,7 @@ font-family: Helvetica Neu, sans-serif;
    /* End logo/header styling. */
 
 
+
 /* Begin Navigation Bar Styling
    #nav {
       font-family: Helvetica Neu, sans-serif;
@@ -159,7 +160,7 @@ font-family: Helvetica Neu, sans-serif;
     }
 
     nav li a:hover {
-      color: #c00;
+      color: #3E91A6;
     }
 
 /* End NEW navigation bar styling. */
@@ -210,8 +211,38 @@ font-family: Helvetica Neu, sans-serif;
 @media only screen and (max-width: 767px) {
   body {
     /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
+       to improve page load speed on mobile internet connections
     background-image: url(images/background-photo-mobile-devices.jpg);
   }
 }
 */
+
+ /* Begin footer styling. */
+
+      footer {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+  }
+      footer ul {
+        font-family: Helvetica Neu, sans-serif;
+        font-size: 12px;
+        margin: 0 0 3em 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      footer li {
+        display:inline-block;
+        padding: 1em;
+      }
+
+      footer li a {
+      text-decoration: none;
+    }
+
+    footer li a:hover {
+      color: #662244;
+    }
+
+/* End footer styling. */
