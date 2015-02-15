@@ -97,6 +97,7 @@ font-family: Helvetica Neu, sans-serif;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* Begin logo/header Styling */
    #title h5 {
       float: left;
@@ -108,35 +109,6 @@ font-family: Helvetica Neu, sans-serif;
       text-decoration: none;
     }
    /* End logo/header styling. */
-
-
-
-/* Begin Navigation Bar Styling
-   #nav {
-      font-family: Helvetica Neu, sans-serif;
-      font-size: 18px;
-      float: right;
-      margin: 0 0 3em 0;
-      padding: 0;
-      list-style: none;
-    }
-
-#nav li {
-      float: right;
-    }
-
-   #nav li a {
-      display: inline-block;
-      padding: 8px 15px;
-      text-decoration: none;
-    }
-
-   #nav li a:hover {
-      color: #c00;
-      background-color: #fff;
-    }
-
-     End navigation bar styling. */
 
   /* Begin NEW navigation bar styling. */
 
@@ -159,7 +131,7 @@ font-family: Helvetica Neu, sans-serif;
       text-decoration: none;
     }
 
-    nav li a:hover {
+      nav li a:hover {
       color: #3E91A6;
     }
 
