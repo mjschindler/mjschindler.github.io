@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+</head>
+
+<body>
+  <header id="title">
+  <h5><a href="http://mjschindler.github.io/index.html">MJ Schindler's Dev Bootcamp Project Website</a></h5>
+  <nav>
+  <ul>
+    <li><a href="http://mjschindler.github.io/blog-index.html">blog</a></li>
+    <li><a href="#">portfolio</a></li>
+    <li><a href="#">contact</a></li>
+    <li><a href="#">about</a></li>
+  </ul></nav>
+</header>
+  <section class="post-meta transparentLight">
+  <h1>Absolute, Relative, or Fixed Positioning: What's the difference?</h1>
+  <h2>When to Stay Static and When to Re-Position</h2>
+  <h6>February 15, 2015</h6>
+  </section>
+
+  <article class="transparent margins">
+    <p>
+    During this second week of Dev Bootcamp, we've brushed up on our HTML and CSS skills. One aspect of CSS that I find most challenging is the positioning property.
+    <p>
+In CSS, the position property tells elements on a webpage how to position themselves. There are four different values that the position property may have (well, there are five, counting the inherit value, but we'll ignore that one for now):
+</p>
+<h3>Static</h3>
+
+<code>position: static;</code>
+<p>
+"Static" is the default position for elements on your page. If you don't change the position in CSS, elements will arrange themselves according to the order in which they are mentioned in the HTML. This is called "normal flow." The elements will display one at a time, from left to right, top to bottom.
+</p>
+<p>
+The static position is the only one that you can't adjust by adding the "top," "right," "bottom," and "left" properties. That means that you would never create a class with these properties:
+</p>
+<code>.static-position {
+    position: static;
+    top: 5px;
+    right: 5px;
+}</code>
+<p>
+Static position sounds simple, right?  Let's get a bit more complicated.
+</p>
+<h3>Relative</h3>
+
+<code>position: relative;</code>
+<p>
+When you set an element to have a relative position, you're telling it, "Position yourself in relation to where you would have been if you were still static, in normal flow." When you alter its position by using the "top," "right," "bottom," and "left" properties,  you're saying, "Go X pixels this way from where you used to be.
+</p>
+<a href="http://blog.teamtreehouse.com/css-positioning"><img src="http://1.bp.blogspot.com/-91qvY8qxSV0/UfpMd_yUo0I/AAAAAAAAAeg/wk-zyTVzZa8/s1600/images.jpg"/></a>
+
+<h3>Absolute</h3>
+
+<code>position: absolute;</code>
+<p>
+The absolute position is like a rebellious kid that have to keep in line with really, REALLY specific orders. When you set an element to an absolution position, you've taken it completely out of normal flow. You've told it, "Hey element, you ABSOLUTELY must position yourself X pixels this way and Y pixels in relation to your parent element. And if you don't have a parent element with a position other than static, position yourself  X pixels this way and Y pixels in relation to the screen." Now that you've put that kid in his place using the "top," "right," "bottom," and "left" properties, all the other elements will ignore it. They will not position themselves in relation to each other at all.
+</p>
+<a href="http://www.dennisplucinik.com/blog/2012/04/30/learning-web-design-adding-structure-with-css-using-positioning-floating-clearing/"><img src="http://www.dennisplucinik.com/blog/wp-content/uploads/2012/03/position-absolute.jpg"/></a>
+
+<h3>Fixed</h3>
+
+<code>position: static;</code>
+<p>
+The fixed position is similar to the absolute position. When you use it on an element, you take it out of normal flow and tell it stay in a specific location on your screen. Unlike an element in the absolute position, an element in the fixed position will remain in place when you scroll down the page. When you position it using the "top," "right," "bottom," and "left" properties, you're telling  it, "Hey, position yourself X pixels this way and Y pixels in relation to the browser window. And stay put, no matter how far up or down, right or left, someone scrolls."
+</p>
+<p>
+This is just an introduction to the differences between the properties.  With this bit of knowledge, we can begin exploring more complicated ways to place elements on your page.
+    </p>
+  </article>
+</body>
+<footer>
+  <ul>
+    <li><a href="https://twitter.com/mjschindler">twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/marthajeanschindler">linkedin</a></li>
+    <li><a href="https://github.com/mjschindler">github</a></li>
+    <li><a href="http://www.mjschindler.com/">mjschindler.com</a></li>
+  </ul>
+</footer>
+
