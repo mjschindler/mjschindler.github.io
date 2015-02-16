@@ -169,6 +169,30 @@ font-family: Helvetica Neu, sans-serif;
       border-radius: 10px;
 }
 
+.transparent h1 {
+  color: #ee6677;
+}
+
+.transparent h2 {
+  color: #ee6677;
+}
+
+.transparent h3 {
+  color: #ee6677;
+}
+
+.transparent h4 {
+  color: #ee6677;
+}
+
+.transparent h5 {
+  color: #ee6677;
+}
+
+.transparent h6 {
+  color: #ee6677;
+}
+
 /* End homepage call to action transparent styling */
 
     .transparentLight {
