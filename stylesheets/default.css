@@ -7,13 +7,11 @@ body {
   color: #F0E5ED;
 }
 
-a,a:link,a:visited
-{
+a,a:link,a:visited {
  color:#ee6677;
  }
 
- a,a:hover
-{
+ a,a:hover {
  color:#3E91A6;
 }
 
@@ -230,3 +228,17 @@ font-family: Helvetica Neu, sans-serif;
     }
 
 /* End footer styling. */
+
+/* Begin figure styling */
+
+figure  {
+  display: block;
+  float: right;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: .75em !important;
+}
+
+/* End figure styling */
