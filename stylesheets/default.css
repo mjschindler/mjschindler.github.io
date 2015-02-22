@@ -219,6 +219,9 @@ font-family: Helvetica Neu, sans-serif;
       footer li {
         display:inline-block;
         padding: 1em;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
       }
 
       footer li a {
