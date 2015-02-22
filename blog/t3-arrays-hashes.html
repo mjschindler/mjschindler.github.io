@@ -19,14 +19,82 @@
   </ul></nav>
 </header>
   <section class="post-meta transparentLight">
-  <h1>Title</h1>
-  <h2>Subtitle</h2>
-  <h6>Date</h6>
+  <h1>Array vs. Hash</h1>
+  <h2>Introducing Ordered and Indexed collections of Objects in Ruby</h2>
+  <h6>February 22, 2015</h6>
   </section>
 
   <article class="transparent margins">
     <p>
-      Blog Post Goes Here.
+      In Ruby, an array is an object that contains ordered lists of other objects.
+    </p>
+    <p>
+      <a href="http://ruby-doc.org//core-1.9.3/Array.html"><quote>Arrays are ordered, integer-indexed collections of any object. Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.</quote></a>
+    </p>
+    <p>
+      A hash is also an ordered lists of other objects, but it is made up of key-value pairs. These pairs may consist of any objects, not just integers.
+    </p>
+    <p>
+      <a href="http://ruby-doc.org//core-2.2.0/Hash.html"><quote>A Hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.</quote></a>
+    </p>
+      <p>
+      Arrays and hashes are similar in these key ways:
+        <ul>
+          <li>
+        They are indexed collections
+          </li>
+          <li>
+        They store lists of other objects
+          </li>
+          <li>
+        These other objects stored within them are accessible using a key
+          </li>
+          <li>
+        They may grow to hold new elements
+          </li>
+          <li>
+        They may contain many different types of objects, such as predefined variables, new objects just created, or expressions
+          </li>
+        </ul>
+      </p>
+      <p>
+      Arrays and hashes are different in these key ways:
+        <ul>
+          <li>
+      An integer is the key to objects in an array
+          </li>
+          <li>
+      Any object may be the key to objects in a hash
+          </li>
+          <li>
+      In general, arrays provide more efficient access to data...
+          </li>
+          <li>
+      ...while hashes provide more flexible access to data
+          </li>
+        </p>
+        <p>
+      As David A. Black explains in <a href="http://www.manning.com/black3/">The Well-Grounded Rubyist</a>, "Arrays and hashes are closely connected. An array is, in a sense, a hash, where the keys happen to be consecutive integers. Hashes are, in a sense, arrays, where the indexes are allowed to be anything, not just integers. If you do use consecutive integers as hash keys, arrays and hashes start behaving similarly when you do lookups (see p. 256 of the 2nd edition) ."
+        </p>
+        <p>
+      As an example, let's compare a typical array to a hash that is using integers as its indexes:
+        </p>
+      <code>
+      array = ["cat", "dog", "bird", "rabbit", "snake"] </code>
+      <br>
+      <code>hash = {0 => "cat", 1 => "dog", 2 => "bird", 3 => "rabbit", 4 =>  "snake"}</code>
+      <br>
+      <code>puts array[0]   # cat</code>
+      <br>
+      <code>puts hash[0]   # cat</code>
+      <br>
+      <code>puts array[4]   # snake</code>
+      <br>
+      <code>puts hash[4]   # snake</code>
+      <br>
+      <p>
+      <small>photo credit: <a href="http://www.flickr.com/photos/48097179@N00/2395242678">papas</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by-nd/2.0/">(license)</a>, <a href="http://www.flickr.com/photos/95721592@N00/14522146794">School of Rays</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by-nd/2.0/">(license)</a></small>
+    </p>
     </p>
   </article>
 </body>
