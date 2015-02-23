@@ -1,0 +1,55 @@
+body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            width: 100%;
+        }
+
+       h1, h2, h3, h4 {
+         font-family: 'Playfair Display', serif;
+       }
+
+       h1 {
+           font-size: 36px;
+       }
+
+       h2 {
+           font-size: 28px;
+       }
+
+       h3 {
+           font-size: 22px;
+       }
+
+       h4 {
+           font-size: 16px;
+       }
+
+       header, main {
+         width: 95%;
+         margin: 0 auto;
+       }
+
+       header section  {
+         width: 50%;
+         text-align: center;
+       }
+
+       header section:first-child, section article:first-of-type {
+          float: left;
+       }
+
+       header section:last-child, section article:last-of-type {
+         float: right;
+       }
+
+       main {
+         clear: both;
+       }
+
+       @media screen and (max-width: 750px) {
+          header section:first-child, section article:first-of-type, header section:last-child, section article:last-of-type {
+              float: none;
+              width: 100%;
+          }
+       }
