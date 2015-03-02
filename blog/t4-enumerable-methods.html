@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>Don't Cycle to Infiniti: A Brief Introduction to Ruby Enumerable#Cycle</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+</head>
+
+<body>
+  <header id="title">
+  <h5><a href="http://mjschindler.github.io/index.html">MJ Schindler's Dev Bootcamp Project Website</a></h5>
+  <nav>
+  <ul>
+    <li><a href="http://mjschindler.github.io/Peer-Pairing/gps1-2.html">pair programming</a></li>
+    <li><a href="http://mjschindler.github.io/blog-index.html">blog</a></li>
+    <li><a href="#">portfolio</a></li>
+    <li><a href="#">contact</a></li>
+    <li><a href="#">about</a></li>
+  </ul></nav>
+</header>
+  <section class="post-meta">
+  <h1>Don't Cycle to Infiniti</h1>
+  <h2>A Brief Introduction to Ruby Enumerable#Cycle</h2>
+  <h6>February 1, 2015</h6>
+  </section>
+
+  <article class="transparent margins">
+    <figure>
+      <img source="https://raw.githubusercontent.com/mjschindler/mjschindler.github.io/master/images/3108029440_019f151de0.jpg" alt="cycle"/>
+    </figure>
+    <p>
+      In today's technical blog post for <a href="http://devbootcamp.com/">Dev Bootcamp</a>, I'm going to look at enumerable#cycle.
+    </p>
+      <blockquote>
+        <p>Calls block for each element of enum repeatedly n times or forever if none or nil is given. If a non-positive number is given or the collection is empty, does nothing. Returns nil if the loop has finished without getting interrupted.
+        </p>
+        <p>#cycle saves elements in an internal array so changes to enum after the first pass have no effect.
+        </p>
+        <p>If no block is given, an enumerator is returned instead.
+        </p>
+      </blockquote>
+      (<a href="http://ruby-doc.org/core-2.1.0/Enumerable.html#method-i-cycle">Source</a>)
+    </p>
+    <p>
+      Like many other enumerable methods, you can call enumerable#cycle on any enumerable object. (Don't forget: an enumerable object is a range, hash, array, etc.) Once you call #cycle, it will run the block n times.
+    </p>
+    <p>
+      <code>
+        a = ["a", "b", "c"]
+      <br>
+        a.cycle { |x| puts x } # print, a, b, c, a, b, c,.. forever.
+      <br>
+        a.cycle(2) { |x| puts x } # print, a, b, c, a, b, c.
+      </code>
+      (<a href="http://ruby-doc.org/core-2.1.0/Enumerable.html#method-i-cycle">Source</a>)
+    </p>
+    <p>
+      Use #cycle with caution.  If you don't pass a number as an argument, it will run forever and result in an infinite loop.
+    </p>
+    <hr>
+    <small>photo credit: <a href="http://www.flickr.com/photos/82995349@N00/3108029440">try to catch me</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a></small>
+  </article>
+</body>
+<footer>
+  <ul>
+    <li><a href="https://twitter.com/mjschindler">twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/marthajeanschindler">linkedin</a></li>
+    <li><a href="https://github.com/mjschindler">github</a></li>
+    <li><a href="http://www.mjschindler.com/">mjschindler.com</a></li>
+  </ul>
+</footer>
+
