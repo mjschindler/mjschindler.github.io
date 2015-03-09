@@ -9,11 +9,11 @@ body {
 }
 
 a,a:link,a:visited {
- color:#ee6677;
+ color:#3E91A6;
  }
 
  a,a:hover {
- color:#3E91A6;
+ color:#ee6677;
 }
 
 /* Begin background image styling*/
