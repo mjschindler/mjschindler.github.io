@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   line-height: 1.5em;
   font-size: 16px;
-  color: #F0E5ED;
+  color: #0B232F;
   clear: both;
 }
 
@@ -191,7 +191,7 @@ font-family: Helvetica Neu, sans-serif;
   color: #ee6677;
 }
 
-/* End homepage call to action transparent styling */
+/* end homepage call to action transparent styling */
 
     .transparentLight {
       background:rgba(255,255,255,0.5);
