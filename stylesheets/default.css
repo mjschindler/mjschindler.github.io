@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   line-height: 1.5em;
   font-size: 16px;
-  color: #0B232F;
+  color: #F0E5ED;
   clear: both;
 }
 
@@ -18,7 +18,7 @@ a,a:link,a:visited {
 
 /* Begin background image styling*/
 body {
-  background-image: url(https://raw.githubusercontent.com/mjschindler/mjschindler.github.io/master/images/golden%20gate%20bridge%2020%25%20opacity.png);
+  background-image: url(https://raw.githubusercontent.com/mjschindler/mjschindler.github.io/master/images/golden%20gate%20bridge%2030%25%20opacity.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
