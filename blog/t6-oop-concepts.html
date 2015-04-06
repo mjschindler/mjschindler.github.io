@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Class Variables and Instance Variables</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+</head>
+<header id="title">
+  <h1><a href="http://mjschindler.github.io/index.html">MJ @ DBC</a></h1>
+  <nav>
+  <ul>
+    <li><a href="http://mjschindler.github.io/Peer-Pairing/gps1-2.html">pair programming</a></li>
+    <li><a href="http://mjschindler.github.io/blog-index.html">blog</a></li>
+    <li><a href="#">portfolio</a></li>
+    <li><a href="#">contact</a></li>
+    <li><a href="#">about</a></li>
+  </ul></nav>
+</header>
+<body>
+  <section class="post-meta">
+  <h1>Class Variables</h1>
+  <h2>and Instance Variables</h2>
+  <h6>April 5, 2015</h6>
+  </section>
+
+  <article class="transparentLight margins">
+     <figure>
+      <img src="https://raw.githubusercontent.com/mjschindler/mjschindler.github.io/master/images/classvariable.png" alt="class variable"/>
+    </figure>
+    <p>
+      Class methods do not have access to instance methods or instance variables. You can use class variables to store data that belongs to a class, but not to its instances. Class instance variables are available only in class methods, while class variables are available in both class methods and instance methods.
+    </p>
+<p>
+A class variable is prefixed with @@ symbols before its name. Instance methods can access both class methods and class variables. An instance variable is prefixed with just one @ symbol.  Class instance variables use the same notation as that of an instance variable. But unlike instance variables, you declare them inside the class definition directly.
+</p>
+<p>
+You will rarely need to use class variables, and you should very rarely use them to store state. There are only a few cases in which class variables are the right choice, like when you need store data at a class level. You may use them to store application configurations like the name, version, database and other settings. Use instance variables instead of class variables when you don't want your data to be shared across the inheritance chain.
+    </p>
+  </article>
+</body>
+<footer>
+  <ul>
+    <li><a href="https://twitter.com/mjschindler">twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/marthajeanschindler">linkedin</a></li>
+    <li><a href="https://github.com/mjschindler">github</a></li>
+    <li><a href="http://www.mjschindler.com/">mjschindler.com</a></li>
+  </ul>
+</footer>
